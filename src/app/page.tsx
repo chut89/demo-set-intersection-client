@@ -126,7 +126,7 @@ function Avatar({ person, size }) {
     return (
             <img
                   className="avatar"
-                  src={getImageUrl(person.imageId)}
+                  src={getImageUrl(person.imageId, size < 90 ? 's' : 'b')}
                   alt={person.fullname}
                   width={size}
                   height={size}
@@ -163,6 +163,17 @@ function Profile({ person, size, profession, awards, discovery }) {
   );
 }
 
+function Card({ title, content }) {
+    return (
+      <div className="card">
+        <div className="card-content">
+          <h1>{title}</h1>
+          {content}
+        </div>
+      </div>    
+    );
+}
+
 export default function Gallery() {
   return (
     <div>
@@ -170,7 +181,7 @@ export default function Gallery() {
       <section className="profile">
         <Profile
             person={{fullname: 'Maria Skłodowska-Curie', imageId: 'szV5sdG'}}
-            size={70}
+            size={60}
             profession={"physicist and chemist"}
             awards={['Nobel Prize in Physics', 'Nobel Prize in Chemistry', 'Davy Medal', 'Matteucci Medal']}
             discovery={'polonium (chemical element)'}
@@ -179,11 +190,29 @@ export default function Gallery() {
       <section className="profile">
         <Profile
           person={{fullname: 'Katsuko Saruhashi', imageId: 'YfeOqp2'}}
-          size={70}
+          size={100}
           profession={"geochemist"}
           awards={['Miyake Prize for geochemistry', 'Tanaka Prize']}
           discovery={'a method for measuring carbon dioxide in seawater'}
         />
+      </section>
+      <section className="profile">
+          <Card 
+            title="Photo"
+            content={
+              <img
+                className="avatar"
+                src="https://i.imgur.com/OKS67lhm.jpg"
+                alt="Aklilu Lemma"
+                width={70}
+                height={70}
+              />
+            }
+          />
+          <Card 
+            title="About"
+            content={<p>Aklilu Lemma was a distinguished Ethiopian scientist who discovered a natural treatment to schistosomiasis.</p>}
+          />  
       </section>
     </div>
   );
