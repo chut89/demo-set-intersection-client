@@ -1,6 +1,4 @@
-//import React from "react";
-
-/*import Image from 'next/image'
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -112,80 +110,4 @@ export default function Home() {
       </div>
     </main>
   )
-}*/
-
-function getImageUrl(imageId, size = 's') {
-  return ('https://i.imgur.com/' +
-    imageId +
-    size +
-    '.jpg'
-  );
 }
-
-function Avatar({ person, size }) {
-    return (
-            <img
-                  className="avatar"
-                  src={getImageUrl(person.imageId)}
-                  alt={person.fullname}
-                  width={size}
-                  height={size}
-            />
-    );
-}
-
-function Profile({ person, size, profession, awards, discovery }) {
-  return (
-    <div>
-        <h2>{person.fullname}</h2>
-        <Avatar
-              person = {person}
-              size = {size}
-        />
-        <ul>
-          <li>
-            <b>Profession: </b> 
-            {profession}
-          </li>
-          <li>
-            <b>Awards: {awards.length} </b>
-            <br/>
-            ({awards.map(el => (
-                <span>{el}, </span>
-            ))})
-          </li>
-          <li>
-            <b>Discovered: </b>
-            {discovery}
-          </li>
-        </ul> 
-    </div>
-  );
-}
-
-export default function Gallery() {
-  return (
-    <div>
-      <h1>Notable Scientists</h1>
-      <section className="profile">
-        <Profile
-            person={{fullname: 'Maria Skłodowska-Curie', imageId: 'szV5sdG'}}
-            size={70}
-            profession={"physicist and chemist"}
-            awards={['Nobel Prize in Physics', 'Nobel Prize in Chemistry', 'Davy Medal', 'Matteucci Medal']}
-            discovery={'polonium (chemical element)'}
-        />
-      </section>
-      <section className="profile">
-        <Profile
-          person={{fullname: 'Katsuko Saruhashi', imageId: 'YfeOqp2'}}
-          size={70}
-          profession={"geochemist"}
-          awards={['Miyake Prize for geochemistry', 'Tanaka Prize']}
-          discovery={'a method for measuring carbon dioxide in seawater'}
-        />
-      </section>
-    </div>
-  );
-}
-
