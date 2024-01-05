@@ -84,13 +84,10 @@ export default function Gallery() {
           <Card 
             title="Photo"
             content={
-              <img
-                className="avatar"
-                src="https://i.imgur.com/OKS67lhm.jpg"
-                alt="Aklilu Lemma"
-                width={70}
-                height={70}
-              />
+              <Avatar 
+                person={{fullname: 'Aklilu Lemma', imageId:'OKS67lh'}}
+                size={70}
+              />  
             }
           />
           <Card 
