@@ -1,54 +1,6 @@
 'use client';
-import {useTime, Clock} from './clock.tsx'
-
-function getImageUrl(imageId, size = 's') {
-  return ('https://i.imgur.com/' +
-    imageId +
-    size +
-    '.jpg'
-  );
-}
-
-function Avatar({ person, size }) {
-    return (
-            <img
-                  className="avatar"
-                  src={getImageUrl(person.imageId, size < 90 ? 's' : 'b')}
-                  alt={person.fullname}
-                  width={size}
-                  height={size}
-            />
-    );
-}
-
-function Profile({ person, size, profession, awards, discovery }) {
-  return (
-    <div>
-        <h2>{person.fullname}</h2>
-        <Avatar
-              person = {person}
-              size = {size}
-        />
-        <ul>
-          <li>
-            <b>Profession: </b> 
-            {profession}
-          </li>
-          <li>
-            <b>Awards: {awards.length} </b>
-            <br/>
-            ({awards.map(el => (
-                <span>{el}, </span>
-            ))})
-          </li>
-          <li>
-            <b>Discovered: </b>
-            {discovery}
-          </li>
-        </ul> 
-    </div>
-  );
-}
+//import {useTime, Clock} from './clock.tsx'
+import { Avatar, Profile } from './Profile.tsx'
 
 function Card({ title, content }) {
     return (
@@ -61,7 +13,7 @@ function Card({ title, content }) {
     );
 }
 
-function Gallery() {
+export default function Gallery() {
   return (
     <div>
       <h1>Notable Scientists</h1>
@@ -99,14 +51,6 @@ function Gallery() {
           />  
       </section>
     </div>
-  );
-}
-
-export default function App() {
-  const time = useTime();
-  //let hours = time.getHours();
-  return (
-    <Clock time={time} />
   );
 }
 
