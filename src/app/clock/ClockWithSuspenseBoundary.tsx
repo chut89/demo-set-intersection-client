@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import { Suspense } from 'react'
 
-import useTime from './useTime.tsx'
+import { useTime } from './useTime.tsx'
 
 function ClockWithSuspenseBoundary({ time }) {
   function calculateDayNight() {
