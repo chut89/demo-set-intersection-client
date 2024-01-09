@@ -11,6 +11,9 @@ export default function Page() {
         <li>
           <Link href="/clock">Clock example</Link>
         </li>
+        <li>
+          <Link href="/input">Food example</Link>
+        </li>
       </ul>
     </nav>
   )
