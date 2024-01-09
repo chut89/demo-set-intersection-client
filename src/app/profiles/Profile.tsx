@@ -66,7 +66,7 @@ function Card({ title, content }) {
 
 export function Gallery() {
   return (
-    <div>
+    <>
       <h1>Notable Scientists</h1>
       <section className="profile">
         <Profile
@@ -101,6 +101,6 @@ export function Gallery() {
             content={<p>Aklilu Lemma was a distinguished Ethiopian scientist who discovered a natural treatment to schistosomiasis.</p>}
           />  
       </section>
-    </div>
+    </>
   );
 }
