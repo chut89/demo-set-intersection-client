@@ -1,5 +1,5 @@
 @tailwind base;
-/*@tailwind components;*/
+@tailwind components;
 @tailwind utilities;
 
 :root {
@@ -16,6 +16,7 @@
   }
 }
 
+/* TODO: change bg color or else horizontal will be hidden */
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
