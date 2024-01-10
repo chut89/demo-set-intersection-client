@@ -16,7 +16,6 @@
   }
 }
 
-/* TODO: change bg color or else horizontal will be hidden */
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(

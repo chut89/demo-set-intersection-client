@@ -49,3 +49,7 @@ ul {
 input { margin: 5px; }
 label { display: block; }
 
+hr {
+  border-color: #aaa;
+  border-width: 1px;
+}
