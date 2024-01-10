@@ -11,15 +11,21 @@ export default function Page() {
         <li>
           <Link href="/clock">Clock example</Link>
         </li>
-        <li>
-          <Link href="/sync-inputs">Sync Inputs example</Link>
-        </li>
-        <li>
-          <Link href="/filterable-list">Filterable list example</Link>
-        </li>
-        <li>
-          <Link href="/input-text-with-hint">Input text with hint example</Link>
-        </li>
+        <li>Input examples</li>
+        <ul>
+            <li>
+              <Link href="/sync-inputs">Sync Inputs example</Link>
+            </li>
+            <li>
+              <Link href="/filterable-list">Filterable list example</Link>
+            </li>
+            <li>
+              <Link href="/input-text-with-hint">Input text with hint example</Link>
+            </li>
+            <li>
+              <Link href="/swap-text-inputs">Swap text inputs example</Link>
+            </li>
+        </ul>
       </ul>
     </nav>
   )
