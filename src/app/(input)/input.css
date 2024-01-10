@@ -53,3 +53,6 @@ hr {
   border-color: #aaa;
   border-width: 1px;
 }
+
+textarea { display: block; margin: 10px 0; }
+

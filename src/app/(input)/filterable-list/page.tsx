@@ -1,10 +1,10 @@
 'use client';
 import { useState } from 'react';
-import './input.css';
+import '../input.css';
 import { foods, filterItems } from './data.js';
 
 
-export function FilterableList() {
+export default function FilterableList() {
   const [query, setQuery] = useState('');
 
   function handleChange(e) {

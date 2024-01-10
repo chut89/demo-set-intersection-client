@@ -1,8 +1,8 @@
 'use client';
 import { useState } from 'react';
-import './input.css';
+import '../input.css';
 
-export function SyncedInputs() {
+export default function SyncedInputs() {
   const [text, setText] = useState('');
 
   function handleChange(e) {

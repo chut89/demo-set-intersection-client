@@ -12,7 +12,13 @@ export default function Page() {
           <Link href="/clock">Clock example</Link>
         </li>
         <li>
-          <Link href="/input">Food example</Link>
+          <Link href="/sync-inputs">Sync Inputs example</Link>
+        </li>
+        <li>
+          <Link href="/filterable-list">Filterable list example</Link>
+        </li>
+        <li>
+          <Link href="/input-text-with-hint">Input text with hint example</Link>
         </li>
       </ul>
     </nav>
