@@ -4,8 +4,8 @@ import { useState } from 'react';
 import ContactList from './ContactList.tsx';
 import EditContact from './EditContact.tsx';
 
-import './form.css'
-import '../input.css'
+import './form.css';
+import '../input.css';
 
 export default function ContactManager() {
   const [
