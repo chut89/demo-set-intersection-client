@@ -28,6 +28,9 @@ export default function Page() {
             <li>
               <Link href="/reset-detail-form">Reset detail form example</Link>
             </li>
+            <li>
+              <Link href="/load-image-eagerly">Load image eagerly example</Link>
+            </li>
         </ul>
       </ul>
     </nav>
