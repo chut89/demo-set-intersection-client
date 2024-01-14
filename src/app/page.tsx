@@ -25,6 +25,9 @@ export default function Page() {
             <li>
               <Link href="/swap-text-inputs">Swap text inputs example</Link>
             </li>
+            <li>
+              <Link href="/reset-detail-form">Reset detail form example</Link>
+            </li>
         </ul>
       </ul>
     </nav>
