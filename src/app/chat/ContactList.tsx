@@ -9,7 +9,7 @@ export default function ContactList({contacts, selectedId, dispatch}) {
                 dispatch({
                   type: 'changed_selection',
                   contactId: contact.id
-                })
+                });
               }}>
               {selectedId === contact.id ? <b>{contact.name}</b> : contact.name}
             </button>
