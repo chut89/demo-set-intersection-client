@@ -9,6 +9,7 @@ export default function Chat({contact, message, dispatch}) {
         onChange={(e) => {
           dispatch({
             type: 'edited_message',
+            contactId: contact.id,
             message: e.target.value
           });
         }}
@@ -17,7 +18,7 @@ export default function Chat({contact, message, dispatch}) {
       <button
         onClick={() => {
           alert(message + ' was sent to ' + contact.name);
-          dispatch({ type: 'edited_message', message: '' });
+          dispatch({ type: 'edited_message', contactId: contact.id, message: '' });
         }}
       >Send to {contact.email}</button>
     </section>
