@@ -32,6 +32,9 @@ export default function Page() {
               <Link href="/synchronize-image-text">Synchronize image and text example</Link>
             </li>
         </ul>
+        <li>
+          <Link href="/chat">Chat example</Link>
+        </li>
       </ul>
     </nav>
   )
