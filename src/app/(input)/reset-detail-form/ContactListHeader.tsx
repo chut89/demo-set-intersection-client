@@ -1,4 +1,4 @@
-export default function ContactList({
+export default function ContactListHeader({
   contacts,
   selectedId,
   onSelect

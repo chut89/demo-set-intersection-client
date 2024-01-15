@@ -26,7 +26,7 @@ export default function Page() {
               <Link href="/swap-text-inputs">Swap text inputs example</Link>
             </li>
             <li>
-              <Link href="/reset-detail-form">Reset detail form example</Link>
+              <Link href="/show-reverse-order">Contact list example</Link>
             </li>
             <li>
               <Link href="/synchronize-image-text">Synchronize image and text example</Link>
