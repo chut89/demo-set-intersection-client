@@ -35,6 +35,9 @@ export default function Page() {
         <li>
           <Link href="/chat">Chat example</Link>
         </li>
+        <li>
+          <Link href="/process-state-queue">Try to implement simple state queue myself!</Link>
+        </li>
       </ul>
     </nav>
   )
