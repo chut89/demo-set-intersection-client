@@ -2,7 +2,7 @@
 
 import './chat.css';
 
-import { useReducer } from 'react';
+import { useReducer } from './MyReact.tsx';
 import Chat from './Chat.tsx';
 import ContactList from './ContactList.tsx';
 import { initialState, messengerReducer } from './messengerReducer';
