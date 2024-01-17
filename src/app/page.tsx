@@ -41,6 +41,9 @@ export default function Page() {
         <li>
           <Link href="/process-state-queue">Try to implement simple state queue myself!</Link>
         </li>
+        <li>
+          <Link href="/shape">Shape example</Link>
+        </li>
       </ul>
     </nav>
   )
