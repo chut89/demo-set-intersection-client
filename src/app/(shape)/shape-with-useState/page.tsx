@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Background from './Background.tsx';
 import Box from './Box.tsx';
 
-import './shape.css';
+import '../shape.css';
 
 const initialPosition = {
   x: 0,
