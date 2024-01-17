@@ -49,6 +49,9 @@ export default function Page() {
             <Link href="/shape-with-useImmer">Shape example (with useImmer)</Link>
           </li>
         </ul>
+        <li>
+          <Link href="/shopping-cart">Shopping cart example</Link>
+        </li>
       </ul>
     </nav>
   )
