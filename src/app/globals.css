@@ -30,6 +30,10 @@ body {
   padding: 0;
 }
 /* override style provided by tailwind*/
+ul {
+  padding-inline-start: 20px;
+}
+
 li {
   list-style: disc;
 }
