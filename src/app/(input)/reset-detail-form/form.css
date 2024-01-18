@@ -12,11 +12,15 @@ div section ul, div section li {
 
 div section li { display: inline-block; }
 
-li button {
+section li button {
   padding: 10px;
 }
 
 button {
   margin-right: 10px;
   margin-bottom: 10px;
+  border-width: 2px;
+  padding: 1px;
+  background-color: rgb(var(--background-start-rgb));
+  border-color: #aaa;
 }

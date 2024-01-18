@@ -50,6 +50,7 @@ div li {
   width: 70px;
   height: 100px;
 }
+div ul li { list-style:none; }
 
 .day {
   background: #fff;

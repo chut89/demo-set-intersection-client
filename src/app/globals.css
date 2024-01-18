@@ -29,3 +29,22 @@ body {
   margin: 20px;
   padding: 0;
 }
+/* override style provided by tailwind*/
+li {
+  list-style: disc;
+}
+
+button {
+  margin: 5px;
+  border-width: 2px;
+  padding: 1px;
+  background-color: rgb(var(--background-start-rgb));
+  border-color: #aaa;
+}
+
+input, textarea{
+  margin: 1px;
+  border-width: 2px;
+  padding: 2px;
+  border-color: #aaa;
+}

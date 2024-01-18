@@ -62,7 +62,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold !important; /* TODO: fix this if you can*/
 }
 
-ul { padding: 0px 10px 0px 20px; }
-li { margin: 5px; }
-
+section section ul { padding: 0px 10px 0px 20px; }
+section section li { margin: 5px; }
+section section ul li { list-style: disc }
 

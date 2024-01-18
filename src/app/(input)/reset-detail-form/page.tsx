@@ -48,7 +48,7 @@ export default function ContactManager() {
         initialData={selectedContact}
         onSave={handleSave}
       />
-      <button type="button" onClick={() => router.push('/show-reverse-order')}>
+      <button onClick={() => router.push('/show-reverse-order')}>
         To Contact List
       </button>
     </div>

@@ -33,7 +33,7 @@ export default function ContactList() {
           </li>
         )}
       </ul>
-      <button type="button" onClick={() => router.push('/reset-detail-form')}>
+      <button onClick={() => router.push('/reset-detail-form')}>
         To Edit contacts
       </button>
     </>
