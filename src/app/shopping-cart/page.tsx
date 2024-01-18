@@ -25,7 +25,18 @@ export default function ShoppingCart() {
   ] = useState(initialProducts)
 
   function handleIncreaseClick(productId) {
-    setProducts(products.map((prod, idx) => idx == productId ? {...prod, count: prod.count + 1} : prod));
+    setProducts(products.map(prod => prod.id == productId ? {...prod, count: prod.count + 1} : prod));
+  }
+
+  function handleDecreaseClick(productId) {
+    const product = products.find(prod => prod.id == productId);
+    if (product.count == 1) {
+      setProducts(products.filter(prod => prod.id != productId));
+    } else if (product.count > 1) {
+      setProducts(products.map(prod => prod.id == productId ? {...prod, count: prod.count - 1} : prod));
+    } else {
+      throw Error('Invalid state: Count < 1');  
+    }
   }
 
   return (
@@ -39,6 +50,11 @@ export default function ShoppingCart() {
             handleIncreaseClick(product.id);
           }}>
             +
+          </button>
+          <button onClick={() => {
+            handleDecreaseClick(product.id);
+          }}>
+            –
           </button>
         </li>
       ))}
