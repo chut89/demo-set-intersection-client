@@ -1,8 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import Background from './Background.tsx';
-import Box from './Box.tsx';
+import Background from '../Background.tsx';
+import Box from '../Box.tsx';
 
 import '../shape.css';
 

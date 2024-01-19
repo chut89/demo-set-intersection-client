@@ -1,8 +1,8 @@
 'use client';
 
 import { useImmer } from 'use-immer';
-import Background from './Background.tsx';
-import Box from './Box.tsx';
+import Background from '../Background.tsx';
+import Box from '../Box.tsx';
 
 import '../shape.css';
 
