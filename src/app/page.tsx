@@ -54,6 +54,17 @@ export default function Page() {
           <Link href="/shopping-cart">Shopping cart example</Link>
         </li>
       </ul>
+      <li>
+        <Link href="/todo-list">Todo list example</Link>
+      </li>
+      <ul>
+        <li>
+          <Link href="/todo-list-with-useState">Todo list example (with useState)</Link>
+        </li>
+        <li>
+          <Link href="/todo-list-with-useImmer">Todo list example (with useImmer)</Link>
+        </li>
+      </ul>
     </nav>
   )
 }
