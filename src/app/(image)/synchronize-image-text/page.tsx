@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 
-import '../input.css';
+import '../image.css';
 
 export default function Gallery() {
   const [index, setIndex] = useState(0);
