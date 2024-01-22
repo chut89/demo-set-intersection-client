@@ -70,6 +70,9 @@ export default function Page() {
         <li>
           <Link href="/todo-list-with-useImmer">Todo list example (with useImmer)</Link>
         </li>
+        <li>
+          <Link href="/debounced-button">Debounced button example</Link>
+        </li>
       </ul>
     </nav>
   )
