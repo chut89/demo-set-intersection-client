@@ -45,6 +45,9 @@ export default function Page() {
           <Link href="/chat">Chat example</Link>
         </li>
         <li>
+          <Link href="/simple-chat">Simple Chat example</Link>
+        </li>
+        <li>
           <Link href="/process-state-queue">Try to implement simple state queue myself!</Link>
         </li>
         <li>Shape example</li>
